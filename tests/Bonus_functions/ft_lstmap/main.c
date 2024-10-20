@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fsoares- <fsoares-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jtoty <jtoty@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/28 15:16:21 by jtoty             #+#    #+#             */
-/*   Updated: 2022/02/09 18:31:05 by fsoares-         ###   ########.fr       */
+/*   Updated: 2024/01/26 16:15:36 by namra            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,14 +90,11 @@ int main(int argc, const char *argv[])
 			return (0);
 		if (list == elem)
 			write(1, "A new list is not returned\n", 27);
-		int i;
-		i = 0;
 		ft_print_result(list);
 		while (list->next)
 		{
 			list = list->next;
 			ft_print_result(list);
-			i++;
 		}
 	}
 	return (0);
